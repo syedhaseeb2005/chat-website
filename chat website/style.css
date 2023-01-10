@@ -1,0 +1,161 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.chat-header{
+    display: flex;
+    cursor: pointer;
+}
+.profile{
+    width: 100%;
+    background: #036055;
+    display: flex;
+    align-items: center;
+    height: 60px;
+    padding: 0px 10px;
+    position: relative; 
+    top: -21px;
+}
+.profile .pp{
+    width: 50px;
+    display: inline-block;
+    border-radius: 50%;
+    margin-left: 32px;
+}
+.profile .arrow{
+    display: inline-block;
+    width: 30px;
+    position: absolute;
+    top: 19px;
+    cursor: pointer;
+        
+}
+.profile h2{
+    display: inline-block;
+    line-height: 60px;
+    vertical-align: bottom;
+    font-size: 20px;
+}
+.profile span{
+    color: black;
+    position: absolute;
+    top: 42px;
+    left: 100px;
+    font-size: 14px;
+}
+.right .icon{
+    display: inline-block;
+    width: 30px;
+    margin-left: 20px;
+    flex: 1;   
+    display:flexbox;
+    justify-content:flex-end;
+    
+
+}
+.right{
+    flex: auto;
+    position:relative;
+    margin-left: 500px;
+    
+    
+}   
+
+
+
+
+#main{
+    background: url(./download.jpg);
+    height: 100vh;
+    width: 80vw;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin: 0;
+    padding: 3px;
+}
+#chatarea{
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    position: absolute;
+    padding: 20px;
+    
+}
+#textarea{
+    position: absolute;
+    bottom: 30px;
+    right: 0;
+    left: 0;
+    background-color: black;
+    color: #729de9;
+    display: flex;
+    padding: 20px 30px;
+    border-radius: 50px;
+    margin: 0 300px;
+    justify-content: space-between;
+    align-items: flex-start
+}
+#textarea input{
+    background: transparent;
+    border: none;
+    color: white;
+    width: 90%;
+    color: #729de9;
+    
+}
+#textarea input:focus{
+    outline: none;
+}
+#textarea input::placeholder{
+    color: white;
+}
+.avatar img{
+    object-fit: contain;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+.avataruser{
+    order: 2;
+}
+.first area{
+    display: flex;
+    align-items: flex-end;
+}
+.textbox{
+    background-color: #6aa1f0;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 0 10px;
+}
+.textboxleft{
+    color: blue;
+    border-bottom-left-radius: 0;
+}
+.textboxright{
+    color: green;
+    border-top-right-radius: 0;
+}
+.chatboxuser{
+    position: relative;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: flex-end;
+}
+.chatboxclient{
+    position: relative;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: flex-start;
+
+}
+.name{
+    position: absolute;
+    bottom: -20px;
+    color: #baaed0;
+    font-size: 15px;
+
+}
